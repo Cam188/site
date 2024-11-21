@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PIGIER BENIN</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Style général */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Style de la carte */
+        .custom-card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .custom-header {
+            background-color: #003366; /* Couleur plus foncée pour correspondre au thème Pigier */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .custom-card img {
+            border-radius: 10px;
+        }
+
+        .custom-card p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .center-text {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        hr {
+            border: 1px solid #007bff;
+            width: 60%;
+            margin: 20px auto; /* Centrage de la ligne */
+        }
+
+        /* Couleurs des titres */
+        h3.text-primary {
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+
+        h5.text-secondary {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Marges supplémentaires pour l'image */
+        .img-fluid {
+            max-width: 70%;
+            height: auto;
+            margin-top: 20px;
+            border: 5px solid #007bff; /* Bordure pour donner un peu de style */
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .custom-header h1 {
+                font-size: 28px;
+            }
+
+            .custom-card p {
+                font-size: 16px;
+            }
+
+            .img-fluid {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Conteneur Bootstrap -->
+    <div class="container">
+        <!-- Section principale avec une card -->
+        <div class="card custom-card">
+            <div class="custom-header">
+                <h1>Université Pigier</h1>
+            </div>
+            <div class="card-body">
+                <h3 class="text-center text-primary">Informatique</h3>
+                <h3 class="text-center text-primary">Comptabilité</h3>
+                <h5 class="text-center text-secondary">Expertise</h5>
+                <hr>
+                <i>
+                    <!-- Contenu centré -->
+                    <p class="center-text">
+                        Je m'appelle BLEOSSI Camille Ronaldo et je suis étudiant en informatique.
+                    </p>
+                    <p class="center-text">
+                        Vers la fin du XX<sup>ème</sup> siècle, on utilisait le langage HTML, qui disparaît aujourd'hui peu à peu au profit de XHTML.
+                    </p>
+                    <p class="center-text">
+                        Nous sommes au cours de <b>XHTML & CSS</b> en salle informatique au quatrième étage.
+                    </p>
+                </i>
+                <!-- Image avec Bootstrap classes -->
+                <div class="text-center">
+                    <img src="Kill.jpg" alt="Image description" class="img-fluid mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

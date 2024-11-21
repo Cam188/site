@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Information</title>
+	<!-- Lien vers le CDN Bootstrap pour faciliter l'intégration -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		/* Styles personnalisés */
+		body {
+			font-family: Arial, sans-serif;
+			color: #333;
+			line-height: 1.6;
+			background-color: #f9f9f9;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			padding: 40px 0;
+		}
+		h2 {
+			color: #007bff;
+			margin-bottom: 15px;
+			font-size: 1.8em; /* Taille de police ajustée */
+		}
+		section {
+			margin-bottom: 40px;
+		}
+		.profile-img {
+			width: 250px;  /* Augmenté la taille de l'image */
+			height: 250px; /* Augmenté la taille de l'image */
+			border-radius: 50%;
+			object-fit: cover;
+			border: 3px solid #007bff;
+			margin: 20px auto;
+		}
+		ol {
+			padding-left: 20px;
+		}
+		ol li {
+			background-color: #f4f4f4;
+			padding: 8px;
+			margin: 5px 0;
+			border-radius: 5px;
+		}
+		/* Ajouter un petit style pour les liens */
+		a {
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: #0056b3;
+		}
+		/* Responsive design */
+		@media (max-width: 768px) {
+			.container {
+				width: 95%;
+			}
+			.profile-img {
+				width: 200px;
+				height: 200px;
+			}
+			h2 {
+				font-size: 1.5em;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Conteneur Bootstrap pour centrer le contenu -->
+	<div class="container">
+		<!-- Section Etat Civil -->
+		<section>
+			<h2>I - Etat Civil</h2>
+			<p><strong>Nom:</strong> <a href="#vele">BLEOSSI</a></p>
+			<p><strong>Prénom:</strong> Camille</p>
+			<p><strong>Contact:</strong> 90015699</p>
+			<p><strong>Filière:</strong> <a href="A_propos.html#rgl">RGL</a></p>
+		</section>
+
+		<!-- Section Image de Profil avec titre -->
+		<section class="text-center">
+			<h2>Ma photo</h2>  <!-- Appliquer le même style h2 ici -->
+			<img src="bll.jpg" alt="Camille" class="profile-img img-fluid">
+		</section>
+
+		<!-- Section Diplômes -->
+		<section>
+			<h2>II - Mes Diplômes</h2>
+			<ol>
+				<li>CEP</li>
+				<li>BEPC</li>
+				<li>BAC</li>
+			</ol>
+		</section>
+
+		<!-- Section Description -->
+		<section id="vele">
+			<h2>Ma Description</h2>
+			<p>
+				Je suis passionné par l'univers des réseaux et du génie logiciel, avec une curiosité constante pour les systèmes qui relient et optimisent les échanges d'informations à l'échelle mondiale.
+				Mon intérêt pour les réseaux me pousse à explorer les infrastructures complexes, à comprendre les protocoles de communication et à améliorer la sécurité des connexions.
+				En parallèle, ma passion pour le génie logiciel me permet de développer des solutions logicielles innovantes, de maîtriser divers langages de programmation et de résoudre des problèmes techniques complexes.
+				Toujours en quête de nouvelles connaissances, je suis motivé par l'idée de contribuer à l'évolution des technologies tout en cherchant à rendre les systèmes plus performants, fiables et sécurisés.
+			</p>
+		</section>
+	</div>
+
+	<!-- Lien vers les scripts Bootstrap pour la fonctionnalité mobile et responsive -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

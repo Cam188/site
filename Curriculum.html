@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- Lien vers le CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers ton fichier CSS personnalisé -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding: 30px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .section-title {
+            color: #343a40;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 25px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .list-group-item span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #6c757d;
+            font-size: 1rem;
+        }
+
+        .img-fluid {
+            border-radius: 10px;
+        }
+
+        .list-group-item ul {
+            margin-left: 20px;
+        }
+
+        /* Style pour les liens */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style pour les boutons de contact */
+        .btn-contact {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* Responsive design */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .img-fluid {
+                max-width: 150px;
+            }
+
+            .footer {
+                font-size: 0.9rem;
+            }
+
+            .contact-info p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .list-group-item {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <!-- Photo de profil -->
+                <img src="camy.jpg" alt="Photo de profil de Camille Ronaldo BLEOSSI, Développeur Web" class="img-fluid rounded-circle" style="max-width: 200px;">
+            </div>
+            <div class="col-md-8">
+                <!-- Informations personnelles -->
+                <h1>BLEOSSI Camille Ronaldo</h1>
+                <p class="lead">Développeur Web | Passionné par le développement logiciel et les nouvelles technologies</p>
+
+                <div class="contact-info">
+                    <p><span>Adresse :</span> Cotonou, Benin</p>
+                    <p><span>Téléphone :</span> +229 90015699</p>
+                    <p><span>Email :</span> <a href="mailto:bleossicamille18@gmail.com">bleossicamille18@gmail.com</a></p>
+                    <p><span>Site Web :</span> <a href="http://www.votresite.com" target="_blank">www.votresite.com</a></p>
+                </div>
+
+                <!-- Bouton de contact -->
+                <a href="mailto:bleossicamille18@gmail.com" class="btn-contact">Contactez-moi</a>
+            </div>
+        </div>
+
+        <section>
+            <div class="section-title">Expérience professionnelle</div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span>Développeur Web</span> - Entreprise XYZ (Janvier 2020 - Présent)
+                    <ul>
+                        <li>Développement et maintenance de sites web responsive</li>
+                        <li>Collaboration avec des équipes de designers et de gestionnaires de projet</li>
+                        <li>Optimisation des performances web et amélioration de l'UX/UI</li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    <span>Stagiaire Développeur</span> - Entreprise ABC (Juin 2018 - Décembre 2019)
+                    <ul>
+                        <li>Assistance au développement de solutions logicielles internes</li>
+                        <li>Participation à la création d'outils automatisés pour le traitement de données</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="section-title">Formation</div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span>Master en Informatique</span> - Université de Technologie (2017 - 2019)
+                </li>
+                <li class="list-group-item">
+                    <span>Bachelor en Développement Web</span> - Université XYZ (2014 - 2017)
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="section-title">Compétences</div>
+            <ul class="list-group">
+                <li class="list-group-item">Développement Frontend : HTML, CSS, JavaScript, React</li>
+                <li class="list-group-item">Développement Backend : PHP, Node.js, Python</li>
+                <li class="list-group-item">Bases de données : MySQL, MongoDB</li>
+                <li class="list-group-item">Version Control : Git, GitHub</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="section-title">Langues</div>
+            <ul class="list-group">
+                <li class="list-group-item">Français : Langue maternelle</li>
+                <li class="list-group-item">Anglais : Courant (C1)</li>
+                <li class="list-group-item">Espagnol : Notions (B1)</li>
+            </ul>
+        </section>
+
+        <div class="footer">
+            <p>Créé par <strong>BLEOSSI Camille</strong></p>
+        </div>
+    </div>
+
+    <!-- Lien Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

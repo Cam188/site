@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Université Pigier Bénin</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* En-tête */
+        header {
+            background-color: #003366; /* Couleur bleue foncée */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Section hero */
+        #hero {
+            background-color: #0056b3; /* Bleu clair pour attirer l'attention */
+            padding: 5rem 0;
+            color: #fff; /* Texte en blanc pour un meilleur contraste */
+            text-align: center;
+        }
+
+        #hero h2, #hero p {
+            color: #fff; /* Texte blanc pour contraste */
+        }
+
+        #hero a {
+            background-color: #f39c12; /* Couleur orange pour les boutons */
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.3rem;
+        }
+
+        /* Section "À propos de nous" */
+        #about {
+            padding: 4rem 0;
+            background-color: #f8f9fa; /* Fond gris clair */
+            color: #333; /* Texte gris foncé */
+            text-align: center;
+        }
+
+        #about h2 {
+            color: #003366; /* Texte bleu foncé */
+        }
+
+        /* Section "Nos Programmes" */
+        #programmes {
+            padding: 4rem 0;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card-title {
+            color: #003366; /* Titre en bleu foncé */
+        }
+
+        .card-text {
+            color: #333;
+        }
+
+        .btn-outline-primary {
+            color: #003366; /* Bouton avec couleur de texte bleu foncé */
+            border-color: #003366;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #003366;
+            color: white;
+        }
+
+        /* Section "Contact" */
+        #contact {
+            padding: 4rem 0;
+            background-color: #f8f9fa; /* Fond gris clair */
+        }
+
+        .contact-info h5 {
+            color: #003366;
+        }
+
+        .form-control, .btn-primary {
+            border-radius: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: #f39c12; /* Bouton orange */
+            border-color: #f39c12;
+        }
+
+        .btn-primary:hover {
+            background-color: #e67e22;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            #hero {
+                padding: 3rem 1rem;
+            }
+
+            #about, #programmes, #contact {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <h1>Université Pigier Bénin</h1>
+            <p class="lead">Excellence, Professionnalisme et Innovation</p>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Découvrez l'université Pigier</h2>
+                <p class="lead">Un environnement qui encourage l'apprentissage et l'innovation.</p>
+                <a href="#about" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about">
+            <div class="container">
+                <h2>À propos de nous</h2>
+                <p>Pigier Bénin offre une formation professionnelle et universitaire axée sur la pratique, avec un personnel enseignant qualifié et des installations modernes.</p>
+            </div>
+        </section>
+
+        <!-- Section Programmes -->
+        <section id="programmes" class="bg-light">
+            <div class="container">
+                <h2 class="text-center">Nos Programmes</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Formation en Management</h5>
+                                <p class="card-text">Préparez-vous à une carrière réussie en gestion d'entreprise.</p>
+                                <!-- Lien vers la page officielle Pigier -->
+                                <a href="https://pigier-benin.com/" class="btn btn-outline-primary">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Informatique et Technologie</h5>
+                                <p class="card-text">Explorez des programmes en développement logiciel, réseaux et plus encore.</p>
+                                <!-- Lien vers la page officielle Pigier -->
+                                <a href="https://pigier-benin.com/" class="btn btn-outline-primary">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Communication & Marketing</h5>
+                                <p class="card-text">Apprenez à gérer la communication et les stratégies marketing.</p>
+                                <!-- Lien vers la page officielle Pigier -->
+                                <a href="https://pigier-benin.com/" class="btn btn-outline-primary">Détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact-section">
+            <div class="container">
+                <h2 class="text-center">Contactez-nous</h2>
+                <div class="row">
+                    <div class="col-md-4 contact-info">
+                        <h5>Adresse</h5>
+                        <p>123 Avenue des Universités, Cotonou</p>
+                    </div>
+                    <div class="col-md-4 contact-info">
+                        <h5>Email</h5>
+                        <p>contact@pigierbenin.com</p>
+                    </div>
+                    <div class="col-md-4 contact-info">
+                        <h5>Téléphone</h5>
+                        <p>+229 12 34 56 78</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="name" placeholder="Votre nom" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Votre email" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

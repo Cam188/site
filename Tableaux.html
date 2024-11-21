@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableaux Professionnels</title>
+    <!-- Lien Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Couleur douce pour l'arrière-plan */
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        table th, table td {
+            text-align: center;
+            padding: 10px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f1f1f1; /* Effet hover doux */
+        }
+
+        tfoot th {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        /* Styles supplémentaires pour le tableau "Exo2" */
+        .rg {
+            font-weight: bold;
+        }
+
+        /* Couleurs conditionnelles pour les statuts */
+        .ad {
+            background-color: #d4edda; /* Vert pour "Admis" */
+        }
+
+        .em {
+            background-color: #fff3cd; /* Jaune pour "Enjambement" */
+        }
+
+        .re {
+            background-color: #f8d7da; /* Rouge pour "Redouble" */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Tableaux Professionnels</h1>
+
+    <!-- Tableau des passagers -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <caption>Passagers du vol 3774</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Pays</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Pays</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 ans</td>
+                    <td>Espagne</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 ans</td>
+                    <td>Etats-Unis</td>
+                </tr>
+                <tr>
+                    <td>François</td>
+                    <td>43 ans</td>
+                    <td>France</td>
+                </tr>
+                <tr>
+                    <td>Martine</td>
+                    <td>34 ans</td>
+                    <td>France</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>13 ans</td>
+                    <td>Australie</td>
+                </tr>
+                <tr>
+                    <td>Xu</td>
+                    <td>19 ans</td>
+                    <td>Chine</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tableau des enregistrements -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <caption>Liste des enregistrements</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Numéro</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Statut</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th scope="col" colspan="5">20 enregistrements</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr class="ad">
+                    <td>1</td>
+                    <td>MAMA</td>
+                    <td>Paul</td>
+                    <td>57859652</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="ad">
+                    <td>2</td>
+                    <td>SANOGO</td>
+                    <td>Koffi</td>
+                    <td>67712456</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="ad">
+                    <td>3</td>
+                    <td>YAO</td>
+                    <td>Hassan</td>
+                    <td>68874561</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="ad">
+                    <td>4</td>
+                    <td>TIEMOKO</td>
+                    <td>Mamadou</td>
+                    <td>67425896</td>
+                    <td>Admis</td>
+                </tr>
+                <tr class="ad">
+                    <td>5</td>
+                    <td>KEITA</td>
+                    <td>Seydou</td>
+                    <td>67923845</td>
+                    <td>Admis</td>
+                </tr>
+
+                <tr class="em">
+                    <td>6</td>
+                    <td>TOURE</td>
+                    <td>Abdou</td>
+                    <td>68457293</td>
+                    <td>Enjambement</td>
+                </tr>
+                <tr class="em">
+                    <td>7</td>
+                    <td>KOUADIO</td>
+                    <td>Augustin</td>
+                    <td>69457203</td>
+                    <td>Enjambement</td>
+                </tr>
+                <tr class="em">
+                    <td>8</td>
+                    <td>SIDIBE</td>
+                    <td>Fatoumata</td>
+                    <td>69863457</td>
+                    <td>Enjambement</td>
+                </tr>
+                <tr class="em">
+                    <td>9</td>
+                    <td>TRAORE</td>
+                    <td>Alhassane</td>
+                    <td>66547628</td>
+                    <td>Enjambement</td>
+                </tr>
+                <tr class="em">
+                    <td>10</td>
+                    <td>DOUMBIA</td>
+                    <td>Ousmane</td>
+                    <td>67542398</td>
+                    <td>Enjambement</td>
+                </tr>
+                <tr class="em">
+                    <td>11</td>
+                    <td>TOURE</td>
+                    <td>Abdou</td>
+                    <td>68457293</td>
+                    <td>Enjambement</td>
+                </tr>
+                <tr class="re">
+                    <td>12</td>
+                    <td>COULIBALY</td>
+                    <td>Aminata</td>
+                    <td>69037485</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>13</td>
+                    <td>DOUMBIA</td>
+                    <td>Issa</td>
+                    <td>69853421</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>14</td>
+                    <td>MAIGA</td>
+                    <td>Saliou</td>
+                    <td>69024385</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>15</td>
+                    <td>SANOGO</td>
+                    <td>Kouadio</td>
+                    <td>69823754</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>16</td>
+                    <td>FALL</td>
+                    <td>Mouhamed</td>
+                    <td>67485029</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>17</td>
+                    <td>DIABATE</td>
+                    <td>Mariam</td>
+                    <td>67829345</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>17</td>
+                    <td>DIALLO</td>
+                    <td>Rachid</td>
+                    <td>65483270</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>18</td>
+                    <td>MAHMOUD</td>
+                    <td>Karim</td>
+                    <td>69042384</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>19</td>
+                    <td>YAO</td>
+                    <td>Basile</td>
+                    <td>67735269</td>
+                    <td>Redouble</td>
+                </tr>
+                <tr class="re">
+                    <td>20</td>
+                    <td>TRAORE</td>
+                    <td>Cheick</td>
+                    <td>68824679</td>
+                    <td>Redouble</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tableau "Exo2" -->
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <caption>Exo2</caption>
+            <tbody>
+                <tr>
+                    <td rowspan="2">GTL</td>
+                    <td colspan="3" class="rg">RGL</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="rg">RMS</td>
+                    <td rowspan="2">EGP</td>
+                </tr>
+                <tr>
+                    <td>GC</td>
+                    <td>CDM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- Lien Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

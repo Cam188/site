@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <!-- Lien vers le CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers ton fichier CSS personnalisé -->
+    <style>
+        /* Style général du corps */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            padding: 20px;
+        }
+
+        /* Style de la boîte du formulaire */
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Titres */
+        legend {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        /* Champ de formulaire */
+        label {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* Style des boutons */
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style des boutons radio */
+        .radio-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        /* Zone de texte */
+        textarea {
+            font-size: 1rem;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 576px) {
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="text-center mb-4">Formulaire de Souhait</h2>
+        <form method="post" action="Traitement.php">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <div class="mb-3">
+                    <label for="nom">Quel est votre nom ?</label>
+                    <input type="text" name="nom" id="nom" tabindex="10" class="form-control" required aria-label="Nom" />
+                </div>
+                <div class="mb-3">
+                    <label for="prenom">Quel est votre prénom ?</label>
+                    <input type="text" name="prenom" id="prenom" tabindex="20" class="form-control" required aria-label="Prénom" />
+                </div>
+                <div class="mb-3">
+                    <label for="email">Quel est votre e-mail ?</label>
+                    <input type="email" name="email" id="email" tabindex="30" class="form-control" required aria-label="E-mail" />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre souhait</legend>
+                <div class="radio-group">
+                    <label><input type="radio" name="souhait" value="riche" id="riche" tabindex="40" aria-label="Être riche" /> Être riche</label><br />
+                    <label><input type="radio" name="souhait" value="celebre" id="celebre" tabindex="50" aria-label="Être célèbre" /> Être célèbre</label><br />
+                    <label><input type="radio" name="souhait" value="intelligent" id="intelligent" tabindex="60" aria-label="Être plus intelligent" /> Être <strong>encore</strong> plus intelligent</label><br />
+                    <label><input type="radio" name="souhait" value="autre" id="autre" tabindex="70" aria-label="Autre souhait" /> Autre...</label>
+                </div>
+                <div class="mb-3">
+                    <label for="precisions">Si "Autre", veuillez préciser :</label><br />
+                    <textarea name="precisions" id="precisions" cols="40" rows="4" tabindex="80" class="form-control" aria-label="Précisions sur le souhait"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-footer">
+                <p>
+                    <input type="submit" class="btn" value="Envoyer" /> <input type="reset" class="btn" value="Réinitialiser" />
+                </p>
+                <p><a href="#">Retour à la page d'accueil</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Lien Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Gris clair pour le fond */
+    padding: 30px;
+}
+
+/* Conteneur principal */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Titres */
+h1, h2, h3 {
+    color: #007bff; /* Bleu pour les titres */
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Section des titres de sections */
+.section-title {
+    color: #343a40; /* Gris foncé */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 25px;
+    border-bottom: 2px solid #007bff; /* Sous-lignage bleu */
+    padding-bottom: 10px;
+}
+
+/* Liste des éléments */
+.list-group-item {
+    border: none;
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+/* Ajouter un surlignage au texte */
+.list-group-item span {
+    font-weight: bold;
+    color: #007bff; /* Bleu pour les labels */
+}
+
+/* Contact et informations personnelles */
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.contact-info span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Pied de page */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #6c757d; /* Gris pour le texte de pied de page */
+    font-size: 1rem;
+}
+
+/* Photo de profil */
+.img-fluid {
+    border-radius: 10px;
+}
+
+/* Listes sans puces pour les liens */
+.en ul li a {
+    text-decoration: none;
+}
+
+/* Suppression des puces des listes */
+.en ul li {
+    list-style-type: none;
+}
+
+/* Liens sans soulignement au survol */
+.en ul li a:hover {
+    background-color: aliceblue;
+}
+
+/* Styles des liens */
+a {
+    color: #007bff; /* Bleu pour les liens */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tableaux */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+/* Listes numérotées ou avec puces */
+.pas_de_retrait {
+    list-style-position: inside;
+}
+
+.retrait {
+    list-style-position: outside;
+}
+
+/* Liste avec puce de type cercle */
+.cercle {
+    list-style-type: circle;
+}
+
+/* Liste avec puce carrée */
+.carre {
+    list-style-type: square;
+}
+
+/* Liste sans puces */
+.rien {
+    list-style-type: none;
+}
+
+/* Liste numérotée avec zéro initial */
+.commence_a_zero {
+    list-style-type: decimal-leading-zero;
+}
+
+/* Liste avec lettres minuscules */
+.lettres_minuscules {
+    list-style-type: lower-alpha;
+}
+
+/* Liste avec chiffres romains */
+.chiffres_romains {
+    list-style-type: upper-roman;
+}
+
+/* Liste avec lettres grecques */
+.lettres_grecques {
+    list-style-type: lower-greek;
+}
+
+/* Application d'un fond de couleur verte */
+.ad {
+    background-color: #28a745; /* Vert plus doux */
+}
+
+/* Application d'un fond de couleur jaune */
+.em {
+    background-color: #ffeb3b; /* Jaune plus clair */
+}
+
+/* Application d'un fond de couleur rouge */
+.re {
+    background-color: #f44336; /* Rouge vif */
+}
+
+/* Application d'un texte en vert */
+.rg {
+    color: #28a745; /* Vert pour la classe rg */
+}
+
+/* Texte en italique */
+.as {
+    font-style: italic;
+}
+
+/* Texte en bleu et en gras */
+.con {
+    color: #007bff; /* Bleu clair */
+    font-weight: bold;
+}
+
+/* Boutons de contact */
+.btn-contact {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .img-fluid {
+        max-width: 150px;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .list-group-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
